@@ -2,6 +2,8 @@
 
 # box - Powerful key -> value storage for the CLI.
 
+![screenshot](http://img803.imageshack.us/img803/8410/screenshot20120128at113.png)
+
 ## Description
 
 box is module for CLI junkies that want quick and dirty way to save snippets and notes
