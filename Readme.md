@@ -29,7 +29,7 @@ directly from their terminal.
 ## Install
 
 ```
-$ npm install box
+$ npm install box -g
 ```
 
 ## Tests
