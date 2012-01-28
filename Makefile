@@ -7,6 +7,6 @@ test:
 		$(TESTS)
 		
 init: 
-	chmod 755 ./data
+	chmod 777 ./data
 
 .PHONY: test init
