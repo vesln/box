@@ -4,6 +4,9 @@
   , "description": "Powerful key -> value storage for the CLI."
   , "keywords": ["cli storage", "storage", "cli"]
   , "author": "Veselin Todorov <hi@vesln.com>"
+  , "dependencies": {
+      "flatiron": "~0.1.7"
+  }
   , "devDependencies": {
       "mocha": "0.3.3"
     , "should": "0.3.2"
