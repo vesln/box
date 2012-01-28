@@ -1,6 +1,6 @@
 {
     "name": "box"
-  , "version": "0.0.0"
+  , "version": "0.0.1"
   , "description": "Powerful key -> value storage for the CLI."
   , "keywords": ["cli storage", "storage", "cli"]
   , "author": "Veselin Todorov <hi@vesln.com>"
