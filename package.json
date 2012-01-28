@@ -1,0 +1,23 @@
+{
+    "name": "box"
+  , "version": "0.0.0"
+  , "description": "Powerful key -> value storage for the CLI."
+  , "keywords": ["cli storage", "storage", "cli"]
+  , "author": "Veselin Todorov <hi@vesln.com>"
+  , "devDependencies": {
+      "mocha": "0.3.3"
+    , "should": "0.3.2"
+  }
+  , "repository" : {
+      "type" : "git"
+    , "url" : "http://github.com/vesln/box.git"
+  }
+  , "homepage": "http://github.com/vesln/box"
+  , "scripts": {
+      "test": "make test"
+  }
+  , "main": "./lib/index"
+  , "engines": { 
+      "node": ">= 0.6.0 < 0.7.0"
+  }
+}
