@@ -4,9 +4,22 @@
 
 ## Description
 
-## Features
+box is module for CLI junkies that want quick and dirty way to save snippets and notes
+directly from their terminal.
 
 ## Synopsis
+
+```   
+   box
+   
+   Usage:
+     box <your-key> <content> - Save a snippet.
+     box <your-key>           - Prints a snippet.
+     box ls                   - Lists all snippets.
+     box rm <key>             - Removes a snippet.
+   
+   Author: Veselin Todorov <hi@vesln.com>
+```
 
 ## Requirements
 
