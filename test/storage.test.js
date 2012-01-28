@@ -36,6 +36,8 @@ function rm() {
   }
 };
 
+fs.chmodSync(path.dirname(file), 0755);
+
 describe('storage', function() {
   beforeEach(rm);
   afterEach(rm);
