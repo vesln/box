@@ -57,7 +57,16 @@ describe('storage', function() {
          done();
        })
      });
-   }); 
+   });
+   
+   it('should return all the stored data when no key is passed', function(done) {
+      storage.set('foo', 'bar', function() {
+        storage.get(function(val) {
+          val.should.eql({foo: 'bar'});
+          done();
+        })
+      });
+    });
   });
   
   describe('.del()', function() {
