@@ -1,4 +1,5 @@
 node_modules/
+data/config.json
 *._
 *.tmp
 .monitor
