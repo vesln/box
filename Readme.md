@@ -9,7 +9,7 @@
 box is powered module for CLI junkies that want quick and dirty way to save snippets and notes
 directly from their terminal.
 
-box is using the awesome (flatiron framework)[https://github.com/flatiron].
+box is using the awesome [flatiron framework](https://github.com/flatiron).
 
 ## Synopsis
 
