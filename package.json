@@ -19,6 +19,7 @@
   , "homepage": "http://github.com/vesln/box"
   , "scripts": {
       "test": "make test"
+    , "postinstall": "make init"
   }
   , "main": "./lib/cli"
   , "bin": {
