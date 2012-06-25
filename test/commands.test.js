@@ -1,10 +1,15 @@
 /*!
  * Box - Powerful key -> value storage for the CLI.
- * 
+ *
  * Veselin Todorov <hi@vesln.com>
  * MIT License.
  */
- 
+
+/**
+ * Support.
+ */
+var should = require('chai').should();
+
 /**
  * Module dependencies.
  */
@@ -17,7 +22,7 @@ var storage = require('../lib/storage');
 
 /**
  * The tests object.
- * 
+ *
  * @type {Object}
  */
 var commands = require('../lib/commands');
@@ -28,7 +33,7 @@ describe('commands', function() {
       commands.version.should.be.ok
     });
   });
-  
+
   describe('.delete()', function() {
     it('should call storage.delete and storage.save', function() {
       sinon.spy(storage, 'del');
@@ -41,7 +46,7 @@ describe('commands', function() {
       storage.save.restore();
     });
   });
-  
+
   describe('.get()', function() {
     it('should call storage.get', function() {
       sinon.stub(storage, 'get');
@@ -51,7 +56,7 @@ describe('commands', function() {
       storage.get.restore();
     });
   });
-  
+
   describe('.set()', function() {
     it('should call storage.set and storage.save', function() {
       sinon.spy(storage, 'set');
@@ -65,7 +70,7 @@ describe('commands', function() {
       storage.save.restore();
     });
   });
-  
+
   describe('.list()', function() {
     it('should call storage.get with no params', function() {
       sinon.stub(storage, 'get');

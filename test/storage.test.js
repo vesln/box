@@ -1,9 +1,14 @@
 /*!
  * Box - Powerful key -> value storage for the CLI.
- * 
+ *
  * Veselin Todorov <hi@vesln.com>
  * MIT License.
  */
+
+/**
+ * Support.
+ */
+var should = require('chai').should();
 
 /**
  * Test dependencies.
@@ -13,14 +18,14 @@ var path = require('path');
 
 /**
  * The tested object.
- * 
+ *
  * @type {Object}
  */
 var storage = require('../lib/storage');
 
 /**
  * Temporary data file.
- * 
+ *
  * @type {String}
  */
 var file = path.join(__dirname, 'tmp', 'data.json');
@@ -39,7 +44,7 @@ function rm() {
 describe('storage', function() {
   beforeEach(rm);
   afterEach(rm);
-  
+
   describe('.load()', function() {
     it('should load file content', function(done) {
       storage.load(file, function(err) {
@@ -48,7 +53,7 @@ describe('storage', function() {
       });
     });
   });
-  
+
   describe('.set() \n    .get()', function() {
    it('should access a key value', function(done) {
      storage.set('foo', 'bar', function() {
@@ -58,7 +63,7 @@ describe('storage', function() {
        })
      });
    });
-   
+
    it('should return all the stored data when no key is passed', function(done) {
       storage.set('foo', 'bar', function() {
         storage.get(function(val) {
@@ -68,7 +73,7 @@ describe('storage', function() {
       });
     });
   });
-  
+
   describe('.del()', function() {
    it('should delete a key', function(done) {
      storage.set('foo', 'bar', function() {
@@ -79,9 +84,9 @@ describe('storage', function() {
           });
        });
      });
-   }); 
+   });
   });
-  
+
   describe('.save()', function() {
     it('should save content to file.', function(done) {
       storage.load(file, function(err) {
@@ -94,9 +99,9 @@ describe('storage', function() {
           })
         });
       });
-    }); 
+    });
   });
-  
+
   describe('.destroy()', function() {
     it('should destroy the loaded file.', function(done) {
       storage.load(file, function(err) {
